@@ -1,4 +1,1 @@
-def hello():
-    print(f"Hello World!")
-
-hello()
+print(f"Hello University of Michigan!")
