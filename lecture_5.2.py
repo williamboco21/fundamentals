@@ -1,0 +1,12 @@
+while True:
+    line = input("> ")
+
+    # first character of string
+    if line[0] == "#":
+        continue
+    elif line == 'done':
+        break
+
+    print(line)
+
+print("Done!")
