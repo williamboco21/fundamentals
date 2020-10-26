@@ -3,18 +3,18 @@ largest = None
 
 while True:
     number = input("Enter a number: ")
-    if number == "done":
+    if number.lower() == 'done':
         break
 
     try:
         number = int(number)
     except:
-        print("Invalid input")
+        print("\nPlease enter a valid number.")
         continue
 
     if smallest is None and largest is None:
-        smallest = number
         largest = number
+        smallest = number
     else:
         if number < smallest:
             smallest = number
@@ -22,5 +22,5 @@ while True:
         if number > largest:
             largest = number
 
-print("Maximum is", largest)
-print("Minimum is", smallest)
+print(f"\nMaximum is {largest}.")
+print(f"Minimum is {smallest}.")
